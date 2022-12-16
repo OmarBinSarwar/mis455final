@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.input-box{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    padding: 6px 12px;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin:20px 30% 30px 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+    background: transparent;
+    color: #555;
+    font-weight: 600;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(69, 25, 180);
+    font-size: 20px;
+}
+.input-box input:focus{
+    outline: none;
+}
+.input-box input::placeholder{
+    color: rgb(91, 84, 107);
+    font-weight: 100;
+    font-size: 20px;
+}
+.input-box input:focus::placeholder{
+    color: rgb(69, 25, 180);
+    font-size: 20px;
+}
+.input-box input:focus{
+    border-color: rgb(69, 25, 180);
+    box-shadow: 0 0 8px rgb(69, 25, 180);
+}
+.input-box button{
+    width: 100%;
+    background: rgb(25, 180, 61);
+    border: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.card-deck{
+    align-items: center;
+    justify-content: center;
+}
+
+.card-deck img{
+    width: 40%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px;
+}
+#card-deck{
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+#card-deck h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    align-self: center;
+    color: rgb(0, 0, 0);
+}
+#card-deck p{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: rgb(28, 16, 16);
+}
