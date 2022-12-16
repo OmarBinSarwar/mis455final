@@ -16,18 +16,27 @@ function display(meal) {
     let count=0;
     let searchResult = document.getElementById('card-deck');
     let searchResultHTML = '';
-    meal.forEach((meal) => {
-        if(count<searchNumber){
-            searchResultHTML += `
-            <div class="card">
-                <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h1 class="card-title">${meal.strMeal}</h1>
+
+    if(meal == null){
+        searchResult.innerHTML = `<h1>Sorry, no result found</h1>`;
+    }
+    else{
+        meal.forEach((meal) => {
+            if(count<searchNumber){
+                searchResultHTML += `
+                <div class="card">
+                    <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1 class="card-title">${meal.strMeal}</h1>
+                    </div>
                 </div>
-            </div>
-            `;
-            count++;
-        }
-    });
-    searchResult.innerHTML = searchResultHTML;
+                `;
+                count++;
+            }
+        });
+        searchResult.innerHTML = searchResultHTML;
+    }
+    
+    
+    
 }
